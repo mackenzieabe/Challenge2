@@ -9,6 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="./assets/js/portfolio.js"></script>
+    
 </head>
 
 <body> 
@@ -16,7 +22,7 @@
         <h1> Mackenzie Giesler-Abe</h1>
     </header>
   
-    <section class="nav">
+    <!--<section class="nav">
         <nav>
             <ul>
                 <li>
@@ -31,25 +37,68 @@
             </ul>
         </nav>
     </section> 
+-->
+    <section> 
+        <div id="accordion">
+            <div class="panel"> <!-- first panel -->
+                 <div class="acc-header">About Me</div>
+                 <div class="acc-body">
+                    <p> Hi! I'm Mackenzie. I love putting things in order and things that look neat and tidy;</p>
+                    <p> whether that be an overgrown garden, a messy closet of clothes or a chatoic html code.</p>
+                    <p> I started my journey of web development in 2022.</p>
+                    <p> When I am not working, I enjoy gardening, reading and spending time with my kids. </p>
+                 </div>
+            </div>
+            <div class="panel"> <!-- second panel -->
+                 <div class="acc-header">Work</div>
+                 <div class="acc-body">body of panel 2</div>
+            </div>
+            <div class="panel"> <!-- third panel -->
+                 <div class="acc-header">Contact</div>
+                 <div class="acc-body">body of panel 3</div>
+            </div>
+       </div> 
 
-    <section id="about" class="page">
-        <div>
-            <h2 class="section-title"> About Me</h2>
-        </div>
-            <div>
+
+
+    <!----
+        <button id="about" class="accordion">About Me</button>
+        <div class="panel">
                 <p> Hi! I'm Mackenzie. I love putting things in order and things that look neat and tidy;</p>
                 <p> whether that be an overgrown garden, a messy closet of clothes or a chatoic html code.</p>
                 <p> I started my journey of web development in 2022.</p>
                 <p> When I am not working, I enjoy gardening, reading and spending time with my kids. </p>
+                    
+                <img src="./assets/css/images/mymug.JPG">
             </div>
-    </section>
+           
+            
+    <button id="work"class="accordion">Work</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a href="https://mackenzieabe.github.io/run-buddy/"> Run Buddy</a>
+                    </li>
+                    <li>
+                        <a href="https://mackenzieabe.github.io/Azohva.network/"> Horiseon </a>
+                    </li>
+                    <li>
+                        <a href="https://mackenzieabe.github.io/Prework/"> Fan Page </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button id="contact" class="accordion">Contact</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
 
-    <section>
-        <div class="mymug">
-            <img src="./assets/css/images/mymug.JPG" alt="Mackenzie smiling at the camera.">
-        </div>
+    
+        
+            
+        
     </section>
-
+<!-- 
     <section id="work" class="page">
         <div class="flex-row"> </div>
         <h2 class="section-title">Work</h2>
@@ -65,16 +114,12 @@
                     <a href="https://mackenzieabe.github.io/Prework/"> Fan Page </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         
-        <section id="contact" class="page">
-            <p>
-                kjlsdfjk
-            </p>
-        </section>
+       
 
         <footer>
-            liksjdfkj
+          
         </footer>
 </body>
 </html>

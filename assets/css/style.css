@@ -10,7 +10,7 @@ body {
   display: block;
 } 
 
-body:before {
+/*body:before {
     content: "";
     display: block;
     position: absolute;
@@ -21,7 +21,7 @@ body:before {
     height: 100%;
     background: url(images/bgplant.jpg);
     background-size: cover;
-} 
+} */
 
 header {
     display: block;
@@ -50,10 +50,19 @@ h1{
     width: 100%;
     max-width: 600px;
 } 
-nav ul li a {
-    font-size: 7em;
+.acc-header{
+    font-size: 6em;
     color: #1a1919;
     text-decoration: none;
     font-family: 'Libre Bodoni', serif;
     padding: 5%;
 }
+
+/** This class will hide all the body by default **/
+#accordion .acc-body{
+    display : none;
+ }
+ /** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
+ #accordion .active .acc-body {
+    display : block;
+ }
