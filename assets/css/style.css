@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 } 
-head {
-    display: none;
 
-} 
 body {
   color: #1a1919;
   font-family:'Libre Bodoni', serif; 
@@ -25,3 +22,38 @@ body:before {
     background: url(images/bgplant.jpg);
     background-size: cover;
 } 
+
+header {
+    display: block;
+} 
+
+header h1 {
+    font-size: 30px;
+    color:#1a1919;
+    margin: 0;
+    display: inline;
+} 
+
+h1{
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} 
+
+.nav{
+    display: block;
+    position:absolute;
+    bottom: 10%;
+    left: 25%;
+    width: 100%;
+    max-width: 600px;
+} 
+nav ul li a {
+    font-size: 7em;
+    color: #1a1919;
+    text-decoration: none;
+    font-family: 'Libre Bodoni', serif;
+    padding: 5%;
+}
