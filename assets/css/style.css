@@ -10,7 +10,7 @@ body {
   display: block;
 } 
 
-/*body:before {
+body::before {
     content: "";
     display: block;
     position: absolute;
@@ -21,7 +21,7 @@ body {
     height: 100%;
     background: url(images/bgplant.jpg);
     background-size: cover;
-} */
+}
 
 header {
     display: block;
@@ -55,14 +55,68 @@ h1{
     color: #1a1919;
     text-decoration: none;
     font-family: 'Libre Bodoni', serif;
-    padding: 5%;
+    padding: 1%;
+
+}
+.acc-header:hover {
+    font-style: italic;
+    cursor: pointer;
+}
+.mymug{
+    float: right;
+    max-width: 200px;
+    max-height:200px;
+    border-radius: 50%;
 }
 
+#accordion {
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+   
+
+}
 /** This class will hide all the body by default **/
 #accordion .acc-body{
     display : none;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    min-height: 300px;
  }
  /** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
  #accordion .active .acc-body {
     display : block;
+ }
+
+ /* active and inactive classes */
+.acc-header-active { 
+    font-size: 1.5em;
+    transition: all 1s;
+}
+
+ .parent {
+     background-image:url(images/runbuddy.jpg);
+     background-size: cover;
+     width: 300px;
+     height: 150px;
+     position:relative;
+     display: inline-block;
+     padding-right: 15px;
+     padding-bottom: 15px;
+ } 
+ .child {
+     background-color:white;
+     width: 100px;
+     height: 50px;
+     position:absolute;
+     left: 0;
+     bottom: 15px;
+     padding:10px;
+     box-sizing: border-box;
+ }   
+
+ .child a {
+     text-decoration: none;
  }
