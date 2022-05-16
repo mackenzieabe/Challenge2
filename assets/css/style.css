@@ -94,6 +94,10 @@ h1{
       padding-top: 20px;
       
  }
+ .acc-body a{
+     text-decoration: none;
+     color:#1a1919
+ }
  /** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
  #accordion .active .acc-body {
     display : block;
@@ -112,14 +116,19 @@ h1{
      height: 150px;
      position:relative;
      display: inline-block;
-     padding-right: 15px;
-     padding-bottom: 15px;
+     padding-right: 20px;
+     padding-bottom: 20px;
+    
  }  
  #horiseon {
     background-image:url(images/digital-marketing-meeting.jpg);
  } 
  #fanpage {
+     background-image:url(images/microphone.jpg)
 
+ } 
+ #robotgladiator {
+     background-image:url(images/robotgladiator.jpg);
  }
  .child {
      background-color:white;
