@@ -9,7 +9,7 @@ body {
   font-family:'Libre Bodoni', serif; 
   display: block;
 } 
-
+/*Pseudocode for background image since I wanted it to be under everything. This took some playing around with.*/
 body::before {
     content: "";
     display: block;
@@ -98,7 +98,7 @@ h1{
      text-decoration: none;
      color:#1a1919
  }
- /** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
+ /* This class will show the body if it has "active" parent class. "active" class will be added to panel div */
  #accordion .active .acc-body {
     display : block;
  }
@@ -120,6 +120,7 @@ h1{
      padding-bottom: 20px;
     
  }  
+ /*I had to make an ID so that the images would all be the same size but be in different parent boxes*/
  #horiseon {
     background-image:url(images/digital-marketing-meeting.jpg);
  } 
@@ -143,8 +144,27 @@ h1{
 
  .child a {
      text-decoration: none;
+ } 
+ /*Added a footer to match the header and included a link to my email plus a copyright*/
+ footer {
+    position: fixed;
+    margin-top: 30px;
+    height: 5%;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+    bottom: 0;
+    background-color: #215732;
  }
-
+ .footer a{
+    text-decoration: none;
+    color:white;
+ }
+ .footer {
+     text-decoration: none;
+     color:white;
+ }
+/*For responsiveness:phones/smaller screens*/
  @media screen and (max-width:600px){
     .acc-header{
         font-size: 3em;

@@ -10,7 +10,4 @@ var $acc = $(this).parent(".panel").find(".acc-body");
         $acc.slideDown();
     }
 });
-
-
-
 }); 
