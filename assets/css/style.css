@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
 body {
-  color: #1a1919;
-  font-family:'Libre Bodoni', serif; 
-  display: block;
-} 
+    color: #1a1919;
+    font-family: 'Cormorant Garamond', sans-serif;
+    display: block;
+}
+
 /*Pseudocode for background image since I wanted it to be under everything. This took some playing around with.*/
 body::before {
     content: "";
@@ -22,52 +23,56 @@ body::before {
     background: url(images/bgplant.jpg);
     background-size: cover;
 }
+
 header {
     display: block;
     padding: 10px;
-    background-color: #215732;
-    color: white;
+    background-color: #36804d;
+    color: black;
     position: relative;
-} 
+}
 
 header h1 {
     font-size: 30px;
     margin: 0;
     display: inline;
-} 
+}
 
-h1{
+h1 {
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-} 
+}
 
-.nav{
+.nav {
     display: block;
-    position:absolute;
+    position: absolute;
     bottom: 10%;
     left: 25%;
     width: 100%;
     max-width: 600px;
-} 
-.acc-header{
+}
+
+.acc-header {
     font-size: 6em;
     color: #1a1919;
     text-decoration: none;
-    font-family: 'Libre Bodoni', serif;
+    font-family: 'Cormorant Garamond', sans-serif;
     padding: 1%;
 
 }
+
 .acc-header:hover {
     font-style: italic;
     cursor: pointer;
 }
-.mymug{
+
+.mymug {
     float: right;
     max-width: 200px;
-    max-height:200px;
+    max-height: 200px;
     border-radius: 50%;
 }
 
@@ -77,76 +82,83 @@ h1{
     position: absolute;
     bottom: 5%;
     left: 15%;
-   
-
+    top:25%;
 }
+
 /** This class will hide all the body by default **/
-#accordion .acc-body{
-    display : none;
-    background-color: rgba(255,255,255,0.7);
+#accordion .acc-body {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     min-height: 300px;
     border: 2px solid #aaa;
     border-radius: 4px;
     position: relative;
-      }
-.acc-body p {
-      padding-top: 20px;
-      
- }
- .acc-body a{
-     text-decoration: none;
-     color:#1a1919
- }
- /* This class will show the body if it has "active" parent class. "active" class will be added to panel div */
- #accordion .active .acc-body {
-    display : block;
- }
+}
 
- /* active and inactive classes */
-.acc-header-active { 
+.acc-body p {
+    padding-top: 20px;
+
+}
+
+.acc-body a {
+    text-decoration: none;
+    color: #1a1919
+}
+
+/* This class will show the body if it has "active" parent class. "active" class will be added to panel div */
+#accordion .active .acc-body {
+    display: block;
+}
+
+/* active and inactive classes */
+.acc-header-active {
     font-size: 1.5em;
     transition: all 1s;
 }
 
- .parent {
-     background-image:url(images/runbuddy.jpg);
-     background-size: cover;
-     width: 300px;
-     height: 150px;
-     position:relative;
-     display: inline-block;
-     padding-right: 20px;
-     padding-bottom: 20px;
-    
- }  
- /*I had to make an ID so that the images would all be the same size but be in different parent boxes*/
- #horiseon {
-    background-image:url(images/digital-marketing-meeting.jpg);
- } 
- #fanpage {
-     background-image:url(images/microphone.jpg)
+.parent {
+    background-image: url(images/runbuddy.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 20px;
 
- } 
- #robotgladiator {
-     background-image:url(images/robotgladiator.jpg);
- }
- .child {
-     background-color:white;
-     width: 100px;
-     height: 50px;
-     position:absolute;
-     left: 0;
-     bottom: 15px;
-     padding:10px;
-     box-sizing: border-box;
- }   
+}
 
- .child a {
-     text-decoration: none;
- } 
- /*Added a footer to match the header and included a link to my email plus a copyright*/
- footer {
+/*I had to make an ID so that the images would all be the same size but be in different parent boxes*/
+#horiseon {
+    background-image: url(images/digital-marketing-meeting.jpg);
+}
+
+#cat-genie {
+    background-image: url(images/cat-genie.jpg)
+}
+
+#robotgladiator {
+    background-image: url(images/robotgladiator.jpg);
+}
+
+.child {
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.child a {
+    text-decoration: none;
+}
+
+/*Added a footer to match the header and included a link to my email plus a copyright*/
+footer {
     position: fixed;
     margin-top: 30px;
     height: 5%;
@@ -154,32 +166,37 @@ h1{
     text-align: right;
     font-size: 0.8em;
     bottom: 0;
-    background-color: #215732;
- }
- .footer a{
+    background-color: #36804d;
+}
+
+.footer a {
     text-decoration: none;
-    color:white;
- }
- .footer {
-     text-decoration: none;
-     color:white;
- }
+    color: white;
+}
+
+.footer {
+    text-decoration: none;
+    color: white;
+}
+
 /*For responsiveness:phones/smaller screens*/
- @media screen and (max-width:600px){
-    .acc-header{
+@media screen and (max-width:600px) {
+    .acc-header {
         font-size: 3em;
         color: #1a1919;
         text-decoration: none;
-        font-family: 'Libre Bodoni', serif;
+        font-family: 'Cormorant Garamond', sans-serif;
         padding: 1%;
     }
+
     #accordion {
         width: 90%;
         max-width: 500px;
         bottom: 5%;
-        left: 5%;   
-    } 
-    .acc-header-active { 
+        left: 5%;
+    }
+
+    .acc-header-active {
         font-size: 1em;
     }
 
