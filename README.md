@@ -1,12 +1,12 @@
-## Portfolio
+# Portfolio
 
-# Description
+## Description
 This site is the homepage for my person portfolio. 
 The 'About Me' tab contains a brief introduction of myself along with my picture. 
 The 'Work' tab contains projects I have worked on. 
 The 'Contact' tab contains links to my email and LinkedIn. 
 
-# Technologies Used
+## Technologies Used
 HTML, CSS and JavaScript
 
 ![Screenshot (31)](https://user-images.githubusercontent.com/102620275/174400805-f8345691-0ad7-42b5-a65e-37d58212b6e8.png)
