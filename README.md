@@ -13,3 +13,6 @@ HTML, CSS and JavaScript
 ![Screenshot (32)](https://user-images.githubusercontent.com/102620275/174400812-31a65860-275c-40c1-9d0c-a1c9baa9fd73.png)
 ![Screenshot (33)](https://user-images.githubusercontent.com/102620275/174400815-86bfe2e3-918d-42ad-bf08-5e4161ecd8c4.png)
 ![Screenshot (34)](https://user-images.githubusercontent.com/102620275/174400821-49220c57-8bf4-4966-b9c8-9a210d067947.png)
+
+## Link to Deployed Website
+https://mackenzieabe.github.io/Challenge2/
