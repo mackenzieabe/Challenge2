@@ -82,7 +82,7 @@ h1 {
     position: absolute;
     bottom: 5%;
     left: 15%;
-    top:25%;
+    top: 25%;
 }
 
 /** This class will hide all the body by default **/
@@ -138,13 +138,10 @@ h1 {
     background-image: url(images/cat-genie.jpg)
 }
 
-#robotgladiator {
-    background-image: url(images/robotgladiator.jpg);
-}
-
 #wordraffle {
     background-image: url(images/wordraffle.png);
 }
+
 .child {
     background-color: white;
     width: 100px;
